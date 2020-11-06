@@ -1,0 +1,1158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List component renders correctly during fetching data 1`] = `
+<Fragment>
+  <div
+    className="row"
+  >
+    <div
+      className="col-12 d-flex align-items-center justify-content-between"
+    >
+      <h2>
+        Todo list
+      </h2>
+      <Link
+        className="font-weight-bold"
+        to="/new"
+      >
+        <i
+          className="fas fa-plus-square mr-2"
+        />
+        New todo
+      </Link>
+    </div>
+  </div>
+  <If
+    check={true}
+  >
+    <div
+      className="row my-5"
+    >
+      <div
+        className="col-12 d-flex justify-content-center"
+      >
+        <div
+          className="spinner-border"
+          role="status"
+          style={
+            Object {
+              "height": "4rem",
+              "width": "4rem",
+            }
+          }
+        >
+          <span
+            className="sr-only"
+          >
+            Loading...
+          </span>
+        </div>
+      </div>
+    </div>
+  </If>
+  <If
+    check={false}
+  >
+    <div
+      className="row mt-3"
+    >
+      <div
+        className="col-12"
+      >
+        <ul
+          className="list-group list-group-flush"
+        />
+      </div>
+    </div>
+    <div
+      className="row mt-2"
+    >
+      <div
+        className="col-12"
+      >
+        <o
+          activeClassName="active"
+          activeLinkClassName=""
+          breakClassName="page-item"
+          breakLabel="..."
+          breakLinkClassName="page-link"
+          containerClassName="pagination justify-content-center mb-0 font-weight-bold"
+          disableInitialCallback={false}
+          disabledClassName="disabled"
+          eventListener="onClick"
+          forcePage={0}
+          marginPagesDisplayed={1}
+          nextAriaLabel="Next page"
+          nextClassName="page-item"
+          nextLabel={
+            <i
+              className="fas fa-chevron-right"
+            />
+          }
+          nextLinkClassName="page-link"
+          onPageChange={[Function]}
+          pageClassName="page-item"
+          pageCount={0}
+          pageLinkClassName="page-link"
+          pageRangeDisplayed={5}
+          previousAriaLabel="Previous page"
+          previousClassName="page-item"
+          previousLabel={
+            <i
+              className="fas fa-chevron-left"
+            />
+          }
+          previousLinkClassName="page-link"
+        />
+      </div>
+    </div>
+  </If>
+  <If
+    check={false}
+  >
+    <div
+      className="row mt-3"
+    >
+      <div
+        className="col-12"
+      >
+        <div
+          className="alert alert-danger mb-0"
+          role="alert"
+        />
+      </div>
+    </div>
+  </If>
+</Fragment>
+`;
+
+exports[`List component renders correctly when an error occurs 1`] = `
+<Fragment>
+  <div
+    className="row"
+  >
+    <div
+      className="col-12 d-flex align-items-center justify-content-between"
+    >
+      <h2>
+        Todo list
+      </h2>
+      <Link
+        className="font-weight-bold"
+        to="/new"
+      >
+        <i
+          className="fas fa-plus-square mr-2"
+        />
+        New todo
+      </Link>
+    </div>
+  </div>
+  <If
+    check={false}
+  >
+    <div
+      className="row my-5"
+    >
+      <div
+        className="col-12 d-flex justify-content-center"
+      >
+        <div
+          className="spinner-border"
+          role="status"
+          style={
+            Object {
+              "height": "4rem",
+              "width": "4rem",
+            }
+          }
+        >
+          <span
+            className="sr-only"
+          >
+            Loading...
+          </span>
+        </div>
+      </div>
+    </div>
+  </If>
+  <If
+    check={false}
+  >
+    <div
+      className="row mt-3"
+    >
+      <div
+        className="col-12"
+      >
+        <ul
+          className="list-group list-group-flush"
+        />
+      </div>
+    </div>
+    <div
+      className="row mt-2"
+    >
+      <div
+        className="col-12"
+      >
+        <o
+          activeClassName="active"
+          activeLinkClassName=""
+          breakClassName="page-item"
+          breakLabel="..."
+          breakLinkClassName="page-link"
+          containerClassName="pagination justify-content-center mb-0 font-weight-bold"
+          disableInitialCallback={false}
+          disabledClassName="disabled"
+          eventListener="onClick"
+          forcePage={0}
+          marginPagesDisplayed={1}
+          nextAriaLabel="Next page"
+          nextClassName="page-item"
+          nextLabel={
+            <i
+              className="fas fa-chevron-right"
+            />
+          }
+          nextLinkClassName="page-link"
+          onPageChange={[Function]}
+          pageClassName="page-item"
+          pageCount={0}
+          pageLinkClassName="page-link"
+          pageRangeDisplayed={5}
+          previousAriaLabel="Previous page"
+          previousClassName="page-item"
+          previousLabel={
+            <i
+              className="fas fa-chevron-left"
+            />
+          }
+          previousLinkClassName="page-link"
+        />
+      </div>
+    </div>
+  </If>
+  <If
+    check={true}
+  >
+    <div
+      className="row mt-3"
+    >
+      <div
+        className="col-12"
+      >
+        <div
+          className="alert alert-danger mb-0"
+          role="alert"
+        >
+          Error message.
+        </div>
+      </div>
+    </div>
+  </If>
+</Fragment>
+`;
+
+exports[`List component renders correctly with elements to display 1`] = `
+<Fragment>
+  <div
+    className="row"
+  >
+    <div
+      className="col-12 d-flex align-items-center justify-content-between"
+    >
+      <h2>
+        Todo list
+      </h2>
+      <Link
+        className="font-weight-bold"
+        to="/new"
+      >
+        <i
+          className="fas fa-plus-square mr-2"
+        />
+        New todo
+      </Link>
+    </div>
+  </div>
+  <If
+    check={false}
+  >
+    <div
+      className="row my-5"
+    >
+      <div
+        className="col-12 d-flex justify-content-center"
+      >
+        <div
+          className="spinner-border"
+          role="status"
+          style={
+            Object {
+              "height": "4rem",
+              "width": "4rem",
+            }
+          }
+        >
+          <span
+            className="sr-only"
+          >
+            Loading...
+          </span>
+        </div>
+      </div>
+    </div>
+  </If>
+  <If
+    check={true}
+  >
+    <div
+      className="row mt-3"
+    >
+      <div
+        className="col-12"
+      >
+        <ul
+          className="list-group list-group-flush"
+        >
+          <li
+            className="list-group-item d-flex align-items-center"
+            key="1"
+          >
+            <If
+              check={false}
+            >
+              <i
+                aria-checked="true"
+                aria-label="Done"
+                className="far fa-check-square text-muted mr-3"
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                role="checkbox"
+                style={
+                  Object {
+                    "cursor": "pointer",
+                    "fontSize": "1.3rem",
+                  }
+                }
+                tabIndex="0"
+              />
+              <span
+                className="flex-grow-1 text-muted text-capitalize font-weight-light"
+              >
+                <del>
+                  delectus aut autem
+                </del>
+              </span>
+            </If>
+            <IfNot
+              check={false}
+            >
+              <i
+                aria-checked="false"
+                aria-label="Not done"
+                className="far fa-square mr-3"
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                role="checkbox"
+                style={
+                  Object {
+                    "cursor": "pointer",
+                    "fontSize": "1.3rem",
+                  }
+                }
+                tabIndex="0"
+              />
+              <span
+                className="flex-grow-1 disabled text-capitalize"
+              >
+                delectus aut autem
+              </span>
+            </IfNot>
+            <button
+              className="btn btn-sm btn-danger font-weight-bold text-nowrap ml-2"
+              onClick={[Function]}
+              type="button"
+            >
+              <i
+                className="fas fa-trash mr-2"
+              />
+              Remove
+            </button>
+          </li>
+          <li
+            className="list-group-item d-flex align-items-center"
+            key="2"
+          >
+            <If
+              check={false}
+            >
+              <i
+                aria-checked="true"
+                aria-label="Done"
+                className="far fa-check-square text-muted mr-3"
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                role="checkbox"
+                style={
+                  Object {
+                    "cursor": "pointer",
+                    "fontSize": "1.3rem",
+                  }
+                }
+                tabIndex="0"
+              />
+              <span
+                className="flex-grow-1 text-muted text-capitalize font-weight-light"
+              >
+                <del>
+                  quis ut nam facilis et officia qui
+                </del>
+              </span>
+            </If>
+            <IfNot
+              check={false}
+            >
+              <i
+                aria-checked="false"
+                aria-label="Not done"
+                className="far fa-square mr-3"
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                role="checkbox"
+                style={
+                  Object {
+                    "cursor": "pointer",
+                    "fontSize": "1.3rem",
+                  }
+                }
+                tabIndex="0"
+              />
+              <span
+                className="flex-grow-1 disabled text-capitalize"
+              >
+                quis ut nam facilis et officia qui
+              </span>
+            </IfNot>
+            <button
+              className="btn btn-sm btn-danger font-weight-bold text-nowrap ml-2"
+              onClick={[Function]}
+              type="button"
+            >
+              <i
+                className="fas fa-trash mr-2"
+              />
+              Remove
+            </button>
+          </li>
+          <li
+            className="list-group-item d-flex align-items-center"
+            key="3"
+          >
+            <If
+              check={false}
+            >
+              <i
+                aria-checked="true"
+                aria-label="Done"
+                className="far fa-check-square text-muted mr-3"
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                role="checkbox"
+                style={
+                  Object {
+                    "cursor": "pointer",
+                    "fontSize": "1.3rem",
+                  }
+                }
+                tabIndex="0"
+              />
+              <span
+                className="flex-grow-1 text-muted text-capitalize font-weight-light"
+              >
+                <del>
+                  fugiat veniam minus
+                </del>
+              </span>
+            </If>
+            <IfNot
+              check={false}
+            >
+              <i
+                aria-checked="false"
+                aria-label="Not done"
+                className="far fa-square mr-3"
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                role="checkbox"
+                style={
+                  Object {
+                    "cursor": "pointer",
+                    "fontSize": "1.3rem",
+                  }
+                }
+                tabIndex="0"
+              />
+              <span
+                className="flex-grow-1 disabled text-capitalize"
+              >
+                fugiat veniam minus
+              </span>
+            </IfNot>
+            <button
+              className="btn btn-sm btn-danger font-weight-bold text-nowrap ml-2"
+              onClick={[Function]}
+              type="button"
+            >
+              <i
+                className="fas fa-trash mr-2"
+              />
+              Remove
+            </button>
+          </li>
+          <li
+            className="list-group-item d-flex align-items-center"
+            key="4"
+          >
+            <If
+              check={true}
+            >
+              <i
+                aria-checked="true"
+                aria-label="Done"
+                className="far fa-check-square text-muted mr-3"
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                role="checkbox"
+                style={
+                  Object {
+                    "cursor": "pointer",
+                    "fontSize": "1.3rem",
+                  }
+                }
+                tabIndex="0"
+              />
+              <span
+                className="flex-grow-1 text-muted text-capitalize font-weight-light"
+              >
+                <del>
+                  et porro tempora
+                </del>
+              </span>
+            </If>
+            <IfNot
+              check={true}
+            >
+              <i
+                aria-checked="false"
+                aria-label="Not done"
+                className="far fa-square mr-3"
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                role="checkbox"
+                style={
+                  Object {
+                    "cursor": "pointer",
+                    "fontSize": "1.3rem",
+                  }
+                }
+                tabIndex="0"
+              />
+              <span
+                className="flex-grow-1 disabled text-capitalize"
+              >
+                et porro tempora
+              </span>
+            </IfNot>
+            <button
+              className="btn btn-sm btn-danger font-weight-bold text-nowrap ml-2"
+              onClick={[Function]}
+              type="button"
+            >
+              <i
+                className="fas fa-trash mr-2"
+              />
+              Remove
+            </button>
+          </li>
+          <li
+            className="list-group-item d-flex align-items-center"
+            key="5"
+          >
+            <If
+              check={false}
+            >
+              <i
+                aria-checked="true"
+                aria-label="Done"
+                className="far fa-check-square text-muted mr-3"
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                role="checkbox"
+                style={
+                  Object {
+                    "cursor": "pointer",
+                    "fontSize": "1.3rem",
+                  }
+                }
+                tabIndex="0"
+              />
+              <span
+                className="flex-grow-1 text-muted text-capitalize font-weight-light"
+              >
+                <del>
+                  laboriosam mollitia et enim quasi adipisci quia provident illum
+                </del>
+              </span>
+            </If>
+            <IfNot
+              check={false}
+            >
+              <i
+                aria-checked="false"
+                aria-label="Not done"
+                className="far fa-square mr-3"
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                role="checkbox"
+                style={
+                  Object {
+                    "cursor": "pointer",
+                    "fontSize": "1.3rem",
+                  }
+                }
+                tabIndex="0"
+              />
+              <span
+                className="flex-grow-1 disabled text-capitalize"
+              >
+                laboriosam mollitia et enim quasi adipisci quia provident illum
+              </span>
+            </IfNot>
+            <button
+              className="btn btn-sm btn-danger font-weight-bold text-nowrap ml-2"
+              onClick={[Function]}
+              type="button"
+            >
+              <i
+                className="fas fa-trash mr-2"
+              />
+              Remove
+            </button>
+          </li>
+          <li
+            className="list-group-item d-flex align-items-center"
+            key="6"
+          >
+            <If
+              check={false}
+            >
+              <i
+                aria-checked="true"
+                aria-label="Done"
+                className="far fa-check-square text-muted mr-3"
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                role="checkbox"
+                style={
+                  Object {
+                    "cursor": "pointer",
+                    "fontSize": "1.3rem",
+                  }
+                }
+                tabIndex="0"
+              />
+              <span
+                className="flex-grow-1 text-muted text-capitalize font-weight-light"
+              >
+                <del>
+                  qui ullam ratione quibusdam voluptatem quia omnis
+                </del>
+              </span>
+            </If>
+            <IfNot
+              check={false}
+            >
+              <i
+                aria-checked="false"
+                aria-label="Not done"
+                className="far fa-square mr-3"
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                role="checkbox"
+                style={
+                  Object {
+                    "cursor": "pointer",
+                    "fontSize": "1.3rem",
+                  }
+                }
+                tabIndex="0"
+              />
+              <span
+                className="flex-grow-1 disabled text-capitalize"
+              >
+                qui ullam ratione quibusdam voluptatem quia omnis
+              </span>
+            </IfNot>
+            <button
+              className="btn btn-sm btn-danger font-weight-bold text-nowrap ml-2"
+              onClick={[Function]}
+              type="button"
+            >
+              <i
+                className="fas fa-trash mr-2"
+              />
+              Remove
+            </button>
+          </li>
+          <li
+            className="list-group-item d-flex align-items-center"
+            key="7"
+          >
+            <If
+              check={false}
+            >
+              <i
+                aria-checked="true"
+                aria-label="Done"
+                className="far fa-check-square text-muted mr-3"
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                role="checkbox"
+                style={
+                  Object {
+                    "cursor": "pointer",
+                    "fontSize": "1.3rem",
+                  }
+                }
+                tabIndex="0"
+              />
+              <span
+                className="flex-grow-1 text-muted text-capitalize font-weight-light"
+              >
+                <del>
+                  illo expedita consequatur quia in
+                </del>
+              </span>
+            </If>
+            <IfNot
+              check={false}
+            >
+              <i
+                aria-checked="false"
+                aria-label="Not done"
+                className="far fa-square mr-3"
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                role="checkbox"
+                style={
+                  Object {
+                    "cursor": "pointer",
+                    "fontSize": "1.3rem",
+                  }
+                }
+                tabIndex="0"
+              />
+              <span
+                className="flex-grow-1 disabled text-capitalize"
+              >
+                illo expedita consequatur quia in
+              </span>
+            </IfNot>
+            <button
+              className="btn btn-sm btn-danger font-weight-bold text-nowrap ml-2"
+              onClick={[Function]}
+              type="button"
+            >
+              <i
+                className="fas fa-trash mr-2"
+              />
+              Remove
+            </button>
+          </li>
+          <li
+            className="list-group-item d-flex align-items-center"
+            key="8"
+          >
+            <If
+              check={true}
+            >
+              <i
+                aria-checked="true"
+                aria-label="Done"
+                className="far fa-check-square text-muted mr-3"
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                role="checkbox"
+                style={
+                  Object {
+                    "cursor": "pointer",
+                    "fontSize": "1.3rem",
+                  }
+                }
+                tabIndex="0"
+              />
+              <span
+                className="flex-grow-1 text-muted text-capitalize font-weight-light"
+              >
+                <del>
+                  quo adipisci enim quam ut ab
+                </del>
+              </span>
+            </If>
+            <IfNot
+              check={true}
+            >
+              <i
+                aria-checked="false"
+                aria-label="Not done"
+                className="far fa-square mr-3"
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                role="checkbox"
+                style={
+                  Object {
+                    "cursor": "pointer",
+                    "fontSize": "1.3rem",
+                  }
+                }
+                tabIndex="0"
+              />
+              <span
+                className="flex-grow-1 disabled text-capitalize"
+              >
+                quo adipisci enim quam ut ab
+              </span>
+            </IfNot>
+            <button
+              className="btn btn-sm btn-danger font-weight-bold text-nowrap ml-2"
+              onClick={[Function]}
+              type="button"
+            >
+              <i
+                className="fas fa-trash mr-2"
+              />
+              Remove
+            </button>
+          </li>
+          <li
+            className="list-group-item d-flex align-items-center"
+            key="9"
+          >
+            <If
+              check={false}
+            >
+              <i
+                aria-checked="true"
+                aria-label="Done"
+                className="far fa-check-square text-muted mr-3"
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                role="checkbox"
+                style={
+                  Object {
+                    "cursor": "pointer",
+                    "fontSize": "1.3rem",
+                  }
+                }
+                tabIndex="0"
+              />
+              <span
+                className="flex-grow-1 text-muted text-capitalize font-weight-light"
+              >
+                <del>
+                  molestiae perspiciatis ipsa
+                </del>
+              </span>
+            </If>
+            <IfNot
+              check={false}
+            >
+              <i
+                aria-checked="false"
+                aria-label="Not done"
+                className="far fa-square mr-3"
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                role="checkbox"
+                style={
+                  Object {
+                    "cursor": "pointer",
+                    "fontSize": "1.3rem",
+                  }
+                }
+                tabIndex="0"
+              />
+              <span
+                className="flex-grow-1 disabled text-capitalize"
+              >
+                molestiae perspiciatis ipsa
+              </span>
+            </IfNot>
+            <button
+              className="btn btn-sm btn-danger font-weight-bold text-nowrap ml-2"
+              onClick={[Function]}
+              type="button"
+            >
+              <i
+                className="fas fa-trash mr-2"
+              />
+              Remove
+            </button>
+          </li>
+          <li
+            className="list-group-item d-flex align-items-center"
+            key="10"
+          >
+            <If
+              check={true}
+            >
+              <i
+                aria-checked="true"
+                aria-label="Done"
+                className="far fa-check-square text-muted mr-3"
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                role="checkbox"
+                style={
+                  Object {
+                    "cursor": "pointer",
+                    "fontSize": "1.3rem",
+                  }
+                }
+                tabIndex="0"
+              />
+              <span
+                className="flex-grow-1 text-muted text-capitalize font-weight-light"
+              >
+                <del>
+                  illo est ratione doloremque quia maiores aut
+                </del>
+              </span>
+            </If>
+            <IfNot
+              check={true}
+            >
+              <i
+                aria-checked="false"
+                aria-label="Not done"
+                className="far fa-square mr-3"
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                role="checkbox"
+                style={
+                  Object {
+                    "cursor": "pointer",
+                    "fontSize": "1.3rem",
+                  }
+                }
+                tabIndex="0"
+              />
+              <span
+                className="flex-grow-1 disabled text-capitalize"
+              >
+                illo est ratione doloremque quia maiores aut
+              </span>
+            </IfNot>
+            <button
+              className="btn btn-sm btn-danger font-weight-bold text-nowrap ml-2"
+              onClick={[Function]}
+              type="button"
+            >
+              <i
+                className="fas fa-trash mr-2"
+              />
+              Remove
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="row mt-2"
+    >
+      <div
+        className="col-12"
+      >
+        <o
+          activeClassName="active"
+          activeLinkClassName=""
+          breakClassName="page-item"
+          breakLabel="..."
+          breakLinkClassName="page-link"
+          containerClassName="pagination justify-content-center mb-0 font-weight-bold"
+          disableInitialCallback={false}
+          disabledClassName="disabled"
+          eventListener="onClick"
+          forcePage={0}
+          marginPagesDisplayed={1}
+          nextAriaLabel="Next page"
+          nextClassName="page-item"
+          nextLabel={
+            <i
+              className="fas fa-chevron-right"
+            />
+          }
+          nextLinkClassName="page-link"
+          onPageChange={[Function]}
+          pageClassName="page-item"
+          pageCount={1}
+          pageLinkClassName="page-link"
+          pageRangeDisplayed={5}
+          previousAriaLabel="Previous page"
+          previousClassName="page-item"
+          previousLabel={
+            <i
+              className="fas fa-chevron-left"
+            />
+          }
+          previousLinkClassName="page-link"
+        />
+      </div>
+    </div>
+  </If>
+  <If
+    check={false}
+  >
+    <div
+      className="row mt-3"
+    >
+      <div
+        className="col-12"
+      >
+        <div
+          className="alert alert-danger mb-0"
+          role="alert"
+        />
+      </div>
+    </div>
+  </If>
+</Fragment>
+`;
+
+exports[`List component renders correctly without elements to display 1`] = `
+<Fragment>
+  <div
+    className="row"
+  >
+    <div
+      className="col-12 d-flex align-items-center justify-content-between"
+    >
+      <h2>
+        Todo list
+      </h2>
+      <Link
+        className="font-weight-bold"
+        to="/new"
+      >
+        <i
+          className="fas fa-plus-square mr-2"
+        />
+        New todo
+      </Link>
+    </div>
+  </div>
+  <If
+    check={false}
+  >
+    <div
+      className="row my-5"
+    >
+      <div
+        className="col-12 d-flex justify-content-center"
+      >
+        <div
+          className="spinner-border"
+          role="status"
+          style={
+            Object {
+              "height": "4rem",
+              "width": "4rem",
+            }
+          }
+        >
+          <span
+            className="sr-only"
+          >
+            Loading...
+          </span>
+        </div>
+      </div>
+    </div>
+  </If>
+  <If
+    check={true}
+  >
+    <div
+      className="row mt-3"
+    >
+      <div
+        className="col-12"
+      >
+        <ul
+          className="list-group list-group-flush"
+        />
+      </div>
+    </div>
+    <div
+      className="row mt-2"
+    >
+      <div
+        className="col-12"
+      >
+        <o
+          activeClassName="active"
+          activeLinkClassName=""
+          breakClassName="page-item"
+          breakLabel="..."
+          breakLinkClassName="page-link"
+          containerClassName="pagination justify-content-center mb-0 font-weight-bold"
+          disableInitialCallback={false}
+          disabledClassName="disabled"
+          eventListener="onClick"
+          forcePage={0}
+          marginPagesDisplayed={1}
+          nextAriaLabel="Next page"
+          nextClassName="page-item"
+          nextLabel={
+            <i
+              className="fas fa-chevron-right"
+            />
+          }
+          nextLinkClassName="page-link"
+          onPageChange={[Function]}
+          pageClassName="page-item"
+          pageCount={0}
+          pageLinkClassName="page-link"
+          pageRangeDisplayed={5}
+          previousAriaLabel="Previous page"
+          previousClassName="page-item"
+          previousLabel={
+            <i
+              className="fas fa-chevron-left"
+            />
+          }
+          previousLinkClassName="page-link"
+        />
+      </div>
+    </div>
+  </If>
+  <If
+    check={false}
+  >
+    <div
+      className="row mt-3"
+    >
+      <div
+        className="col-12"
+      >
+        <div
+          className="alert alert-danger mb-0"
+          role="alert"
+        />
+      </div>
+    </div>
+  </If>
+</Fragment>
+`;

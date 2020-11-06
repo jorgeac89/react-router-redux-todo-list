@@ -1,0 +1,23 @@
+#!/bin/sh
+
+echo "PRE-COMMIT HOOK..."
+
+./scripts/lint > /dev/null 2>&1 \
+&& echo "✔ Lint passed" \
+|| { echo "✘ Lint failed" && exit 1; }
+
+./scripts/stylelint > /dev/null 2>&1 \
+&& echo "✔ Style lint passed" \
+|| { echo "✘ Style lint failed" && exit 1; }
+
+./scripts/test > /dev/null 2>&1 \
+&& echo "✔ Tests passed" \
+|| { echo "✘ Tests failed" && exit 1; }
+
+./scripts/build-dev > /dev/null 2>&1 \
+&& echo "✔ Development build done" \
+|| { echo "✘ Development build failed" && exit 1; }
+
+./scripts/build-prod > /dev/null 2>&1 \
+&& echo "✔ Production build done" \
+|| { echo "✘ Production build failed" && exit 1; }

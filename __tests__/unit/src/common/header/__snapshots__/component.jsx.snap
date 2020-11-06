@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component renders correctly 1`] = `
+<div
+  className="container-fluid bg-dark text-light mb-4"
+>
+  <div
+    className="row align-items-center justify-content-around text-center"
+  >
+    <div
+      className="col-lg-6 text-lg-left"
+    >
+      <h1
+        className="font-weight-light"
+      >
+        React Router Redux Todo List
+      </h1>
+      <p
+        className="lead"
+      >
+        Example of a web application developed with 
+        <strong>
+          React
+        </strong>
+        , 
+        <strong>
+          React Router
+        </strong>
+         and 
+        <strong>
+          Redux
+        </strong>
+        .
+      </p>
+    </div>
+    <div
+      className="col-lg-4 text-lg-right"
+    >
+      <img
+        alt="logo"
+        className="img-fluid mb-3 my-lg-3"
+        src="undefined/images/logo.webp"
+      />
+    </div>
+  </div>
+</div>
+`;

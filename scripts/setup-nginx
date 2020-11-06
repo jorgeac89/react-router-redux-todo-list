@@ -1,0 +1,8 @@
+#!/bin/sh
+
+PROJECT_PATH=$(dirname "$(dirname "$(readlink -f "$0")")")
+
+sed "s#<path_to_project>#$PROJECT_PATH#g" ./nginx.local.conf | sudo tee /etc/nginx/sites-available/todolist > /dev/null \
+&& sudo ln -sf /etc/nginx/sites-available/todolist /etc/nginx/sites-enabled/todolist \
+&& mkdir -p "$PROJECT_PATH/log" \
+&& sudo service nginx restart

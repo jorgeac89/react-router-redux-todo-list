@@ -1,0 +1,8 @@
+#!/bin/sh
+
+docker run \
+  -d \
+  -p 8081:80 \
+  --rm \
+  --name todolist_dev \
+  todolist:dev

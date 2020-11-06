@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IfNot library does not renders the provided React element when the condition is true 1`] = `""`;
+
+exports[`IfNot library renders the provided React element when the condition is false 1`] = `
+<div>
+  React element
+</div>
+`;

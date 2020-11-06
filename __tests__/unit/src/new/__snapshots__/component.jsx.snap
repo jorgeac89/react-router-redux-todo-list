@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`New component renders correctly with text 1`] = `
+<Fragment>
+  <div
+    className="row"
+  >
+    <div
+      className="col-12 d-flex align-items-center justify-content-between"
+    >
+      <h2>
+        New todo
+      </h2>
+      <Link
+        className="font-weight-bold"
+        to="/list"
+      >
+        <i
+          className="fas fa-list-alt mr-2"
+        />
+        Todo list
+      </Link>
+    </div>
+  </div>
+  <form>
+    <div
+      className="row mt-3"
+    >
+      <div
+        className="col-12"
+      >
+        <textarea
+          className="form-control form-control-lg mb-2"
+          onChange={[Function]}
+          placeholder="Write the todo text here..."
+          value="Example todo"
+        />
+      </div>
+    </div>
+    <div
+      className="row mt-3"
+    >
+      <div
+        className="col-12 text-center"
+      >
+        <button
+          className="btn btn-primary font-weight-bold"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          <i
+            className="fas fa-save mr-2"
+          />
+          Save
+        </button>
+      </div>
+    </div>
+  </form>
+</Fragment>
+`;
+
+exports[`New component renders correctly without text 1`] = `
+<Fragment>
+  <div
+    className="row"
+  >
+    <div
+      className="col-12 d-flex align-items-center justify-content-between"
+    >
+      <h2>
+        New todo
+      </h2>
+      <Link
+        className="font-weight-bold"
+        to="/list"
+      >
+        <i
+          className="fas fa-list-alt mr-2"
+        />
+        Todo list
+      </Link>
+    </div>
+  </div>
+  <form>
+    <div
+      className="row mt-3"
+    >
+      <div
+        className="col-12"
+      >
+        <textarea
+          className="form-control form-control-lg mb-2"
+          onChange={[Function]}
+          placeholder="Write the todo text here..."
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      className="row mt-3"
+    >
+      <div
+        className="col-12 text-center"
+      >
+        <button
+          className="btn btn-primary font-weight-bold"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
+        >
+          <i
+            className="fas fa-save mr-2"
+          />
+          Save
+        </button>
+      </div>
+    </div>
+  </form>
+</Fragment>
+`;
