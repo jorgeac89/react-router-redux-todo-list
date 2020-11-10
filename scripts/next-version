@@ -33,11 +33,23 @@ NEXT_VERSION=""
 case "$(git rev-parse --abbrev-ref HEAD)" in
   develop) NEXT_VERSION="$SEMVER-$DEVSUFIX.$(($BUILD+1))" ;;
   feature*) NEXT_VERSION="$SEMVER-$DEVSUFIX.$BUILD.$FEATHASH.$(($FEATBUILD+1))" ;;
-  *)
-    # Allows us to read user input below, assigns stdin to keyboard
-    exec < /dev/tty 
-    read -p "New version (current $PACKAGE_VERSION): " NEXT_VERSION ;;
 esac
+
+if [ ! -z "$NEXT_VERSION" ]; then 
+  AUTO_BUMP="n"
+  # Allows to read user input below, assigns stdin to keyboard
+  exec < /dev/tty 
+  read -p "New version is $NEXT_VERSION, is that correct? (current $PACKAGE_VERSION) (y/n) " AUTO_BUMP
+
+  [ ! "$(echo $AUTO_BUMP | sed 's/.*/\L&/')" = "y" ] && { \
+    # Allows to read user input below, assigns stdin to keyboard
+    exec < /dev/tty 
+    read -p "New version (current $PACKAGE_VERSION): " NEXT_VERSION; }
+else
+  # Allows to read user input below, assigns stdin to keyboard
+  exec < /dev/tty 
+  read -p "New version (current $PACKAGE_VERSION): " NEXT_VERSION
+fi
 
 [ -z "$NEXT_VERSION" ] \
   && exit 1 \
