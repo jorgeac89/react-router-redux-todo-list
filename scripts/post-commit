@@ -1,0 +1,15 @@
+#!/bin/sh
+
+PROJECT_PATH=$(dirname "$(dirname "$(readlink -f "$0")")")
+
+cd "$PROJECT_PATH" || exit 1
+
+PREVIOUS_COMMIT="$(git rev-parse HEAD)"
+VERSION="$(git show $PREVIOUS_COMMIT:package.json \
+  | grep version \
+  | head -1 \
+  | awk -F: '{ print $2 }' \
+  | sed 's/[",]//g' \
+  | tr -d '[[:space:]]')"
+
+git tag -a "v$VERSION" -m "Version $VERSION" $PREVIOUS_COMMIT
