@@ -1,0 +1,40 @@
+#!/bin/sh
+
+PROJECT_PATH=$(dirname "$(dirname "$(readlink -f "$0")")")
+
+cd "$PROJECT_PATH" || exit 1
+
+PACKAGE_VERSION=$(cat package.json \
+  | grep version \
+  | head -1 \
+  | awk -F: '{ print $2 }' \
+  | sed 's/[",]//g' \
+  | tr -d '[[:space:]]')
+
+DEVSUFIX="snapshot"
+RELSUFIX="rc"
+
+SEMVER=$(echo $PACKAGE_VERSION | awk 'BEGIN { FS = "-" } ; { print $1 }')
+MAJOR_VERSION=$(echo $SEMVER | awk 'BEGIN { FS = "." } ; { print $1 }')
+MINOR_VERSION=$(echo $SEMVER | awk 'BEGIN { FS = "." } ; { print $2 }')
+PATCH_VERSION=$(echo $SEMVER | awk 'BEGIN { FS = "." } ; { print $3 }')
+
+DEVVER=$(echo $PACKAGE_VERSION | awk 'BEGIN { FS = "-" } ; { print $2 }')
+SUFIX=$(echo $DEVVER | awk 'BEGIN { FS = "." } ; { print $1 }')
+BUILD=$(echo $DEVVER | awk 'BEGIN { FS = "." } ; { print $2 }')
+[ -z "$BUILD" ] &&  BUILD="0"
+FEATHASH=$(echo $DEVVER | awk 'BEGIN { FS = "." } ; { print $3 }')
+[ -z "$FEATHASH" ] &&  FEATHASH="$(git rev-parse --abbrev-ref HEAD | sha256sum | cut -c1-10)"
+FEATBUILD=$(echo $DEVVER | awk 'BEGIN { FS = "." } ; { print $4 }')
+[ -z "$FEATBUILD" ] &&  FEATBUILD="0"
+
+NEXT_VERSION=""
+case "$(git rev-parse --abbrev-ref HEAD | cut -c1-7)" in
+  "develop") NEXT_VERSION="$SEMVER-$DEVSUFIX.$(($BUILD+1))";;
+  "feature") NEXT_VERSION="$SEMVER-$DEVSUFIX.$BUILD.$FEATHASH.$(($FEATBUILD+1))";;
+  *) read -p "New version (current $PACKAGE_VERSION): " NEXT_VERSION
+esac
+
+[ -z "$NEXT_VERSION" ] \
+  && exit 1 \
+  || echo "$NEXT_VERSION"
