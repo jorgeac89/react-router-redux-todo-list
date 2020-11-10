@@ -25,13 +25,10 @@ echo "PRE-COMMIT HOOK..."
 && echo "✔ Production build done" \
 || { echo "✘ Production build failed" && exit 1; }
 
-[ "$(git rev-parse --abbrev-ref HEAD | cut -c1-7)" = "feature" ] || \
-[ "$(git rev-parse --abbrev-ref HEAD | cut -c1-7)" = "develop" ]  && {
-  NEXT_VERSION="$($SCRIPTS_PATH/next-version)"
-  [ ! -z "$NEXT_VERSION" ] \
-  && cd "$PROJECT_PATH" \
-  && pnpm version "$NEXT_VERSION" -git-tag-version=false > /dev/null 2>&1 \
-  && git add ./package.json \
-  && echo "✔ Version bump" \
-  || { echo "✘ Version bump" && exit 1; }
-}
+NEXT_VERSION="$($SCRIPTS_PATH/next-version)"
+[ ! -z "$NEXT_VERSION" ] \
+&& cd "$PROJECT_PATH" \
+&& pnpm version "$NEXT_VERSION" -git-tag-version=false > /dev/null 2>&1 \
+&& git add ./package.json \
+&& echo "✔ Version bump" \
+|| { echo "✘ Version bump" && exit 1; }
