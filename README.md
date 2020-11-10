@@ -102,7 +102,7 @@ It is recommended run the project in a Linux machine. Also you will need to inst
    pnpm setup
    ```
 
-   This will install the project dependencies and the **Git hooks**.
+   This will install the project dependencies and will set up Git.
 
 4. Add the hostnames `todolist.local` and `www.todolist.local` to the localhost IP row in the file `/etc/hosts`. The row should look like this:
 
