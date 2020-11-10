@@ -2,6 +2,8 @@
 
 PROJECT_PATH=$(dirname "$(dirname "$(readlink -f "$0")")")
 
+echo "POST-COMMIT HOOK..."
+
 cd "$PROJECT_PATH" || exit 1
 
 PREVIOUS_COMMIT="$(git rev-parse HEAD)"
@@ -12,4 +14,6 @@ VERSION="$(git show $PREVIOUS_COMMIT:package.json \
   | sed 's/[",]//g' \
   | tr -d '[[:space:]]')"
 
-git tag -a "v$VERSION" -m "Version $VERSION" $PREVIOUS_COMMIT
+git tag -a "v$VERSION" -m "Version $VERSION" $PREVIOUS_COMMIT \
+&& echo "✔ Version $VERSION tagged" \
+|| { echo "✘ Tagging version $VERSION failed" && exit 1; }
