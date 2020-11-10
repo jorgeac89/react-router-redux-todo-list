@@ -539,7 +539,7 @@ This project is licensed under the MIT License - see the [LICENSE][license] file
 
 [repository-tags]: https://github.com/jorgeac89/react-router-redux-todo-list/tags/
 
-[license]: https://github.com/jorgeac89/react-router-redux-todo-list/blob/master/LICENSE.txt
+[license]: https://github.com/jorgeac89/react-router-redux-todo-list/blob/master/LICENSE
 
 <!-- EXTERNAL LINKS -->
 
