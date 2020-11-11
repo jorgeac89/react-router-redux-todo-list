@@ -14,6 +14,13 @@ VERSION="$(git show $PREVIOUS_COMMIT:package.json \
   | sed 's/[",]//g' \
   | tr -d '[[:space:]]')"
 
-git tag -a "v$VERSION" -m "Version $VERSION" $PREVIOUS_COMMIT \
-&& echo "✔ Version $VERSION tagged" \
-|| { echo "✘ Tagging version $VERSION failed" && exit 1; }
+# Allows to read user input below, assigns stdin to keyboard
+GENERATE_TAG="n"
+exec < /dev/tty 
+read -p "Create tag for version $VERSION? (y/n) " GENERATE_TAG
+
+if [ "$(echo $GENERATE_TAG | sed 's/.*/\L&/')" = "y" ]; then
+  git tag -a "v$VERSION" -m "Version $VERSION" $PREVIOUS_COMMIT \
+  && echo "✔ Version $VERSION tagged" \
+  || { echo "✘ Tagging version $VERSION failed" && exit 1; }
+fi
