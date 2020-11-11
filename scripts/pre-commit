@@ -30,5 +30,5 @@ NEXT_VERSION="$($SCRIPTS_PATH/next-version)"
 && cd "$PROJECT_PATH" \
 && pnpm version "$NEXT_VERSION" -git-tag-version=false > /dev/null 2>&1 \
 && git add ./package.json \
-&& echo "✔ Version bump" \
-|| { echo "✘ Version bump" && exit 1; }
+&& echo "✔ Version updated" \
+|| { echo "✘ Version update failed" && exit 1; }
