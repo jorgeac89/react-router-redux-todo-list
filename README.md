@@ -501,7 +501,15 @@ Contributions are always welcome and we encourage you to help us to improve the 
 
 ## Versioning
 
-The project uses [SemVer][semver] for versioning, considering a major change when the GUI changes substantially or when backend APIs implement breaking changes, a minor change when new features are added and a patch when bugs are fixed. For the versions available, see the [tags on this repository][repository-tags].
+The project uses [SemVer][semver] for versioning in `master` branch, considering a major change when the GUI changes substantially or when backend APIs implement breaking changes, a minor change when new features are added and a patch when bugs are fixed.
+
+For `release` branches, it uses for the next version to be used in `master` branch with the suffix `-rc.x`, being `x` the number of commits since the branch was created.
+
+Regarding `develop` branch, it uses the last `master` branch version and adds the suffix `-snapshot.x`, being `x` the number of commits since the last merge with `master` branch or `release` branch.
+
+Finally, for `feature` branches, they use the version of the commit of the `develop` branch from which it started and adds the suffix `.hash.x`, being `hash` the first 10 characters of the sha256 of the branch name and `x` the number of commits it that branch.
+
+For the versions available, see the [tags on this repository][repository-tags].
 
 ## Authors
 
