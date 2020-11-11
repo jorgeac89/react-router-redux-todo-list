@@ -12,8 +12,8 @@ PACKAGE_VERSION="$(git show $PREVIOUS_COMMIT:package.json \
   | sed 's/[",]//g' \
   | tr -d '[[:space:]]')"
 
-DEVSUFIX="snapshot"
-RELSUFIX="rc"
+DEVSUFFIX="snapshot"
+RELSUFFIX="rc"
 
 SEMVER=$(echo $PACKAGE_VERSION | awk 'BEGIN { FS = "-" } ; { print $1 }')
 MAJOR_VERSION=$(echo $SEMVER | awk 'BEGIN { FS = "." } ; { print $1 }')
@@ -21,7 +21,7 @@ MINOR_VERSION=$(echo $SEMVER | awk 'BEGIN { FS = "." } ; { print $2 }')
 PATCH_VERSION=$(echo $SEMVER | awk 'BEGIN { FS = "." } ; { print $3 }')
 
 DEVVER=$(echo $PACKAGE_VERSION | awk 'BEGIN { FS = "-" } ; { print $2 }')
-SUFIX=$(echo $DEVVER | awk 'BEGIN { FS = "." } ; { print $1 }')
+SUFFIX=$(echo $DEVVER | awk 'BEGIN { FS = "." } ; { print $1 }')
 BUILD=$(echo $DEVVER | awk 'BEGIN { FS = "." } ; { print $2 }')
 [ -z "$BUILD" ] &&  BUILD="0"
 FEATHASH=$(echo $DEVVER | awk 'BEGIN { FS = "." } ; { print $3 }')
@@ -31,8 +31,8 @@ FEATBUILD=$(echo $DEVVER | awk 'BEGIN { FS = "." } ; { print $4 }')
 
 NEXT_VERSION=""
 case "$(git rev-parse --abbrev-ref HEAD)" in
-  develop) NEXT_VERSION="$SEMVER-$DEVSUFIX.$(($BUILD+1))" ;;
-  feature*) NEXT_VERSION="$SEMVER-$DEVSUFIX.$BUILD.$FEATHASH.$(($FEATBUILD+1))" ;;
+  develop) NEXT_VERSION="$SEMVER-$DEVSUFFIX.$(($BUILD+1))" ;;
+  feature*) NEXT_VERSION="$SEMVER-$DEVSUFFIX.$BUILD.$FEATHASH.$(($FEATBUILD+1))" ;;
 esac
 
 if [ ! -z "$NEXT_VERSION" ]; then 
