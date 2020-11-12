@@ -1,6 +1,6 @@
 {
   "name": "react-router-redux-todo-list",
-  "version": "1.2.0-snapshot.0",
+  "version": "1.2.0-snapshot.0.63e76d5f69.1",
   "description": "Example of a web application developed with React, React Router and Redux",
   "keywords": [
     "react",
@@ -77,7 +77,6 @@
     "@babel/preset-react": "^7.12.5",
     "autoprefixer": "^10.0.2",
     "babel-loader": "^8.2.1",
-    "babel-plugin-emotion": "^10.0.33",
     "browserslist": "^4.14.7",
     "copy-webpack-plugin": "^6.3.0",
     "cross-env": "^7.0.2",
