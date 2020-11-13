@@ -6,6 +6,7 @@
   ![Last commit][last-commit-badge]
   ![Issues][issues-badge]
   ![Pull requests][pull-requests-badge]
+  ![release][release-badge]
   ![Code size][code-size-badge]
   ![Repo size][repo-size-badge]
 
@@ -602,6 +603,8 @@ This project is licensed under the MIT License - see the [LICENSE][license] file
 [issues-badge]: https://img.shields.io/github/issues/jorgeac89/react-router-redux-todo-list?style=flat-square
 
 [pull-requests-badge]: https://img.shields.io/github/issues-pr/jorgeac89/react-router-redux-todo-list?style=flat-square
+
+[release-badge]: https://img.shields.io/github/v/release/jorgeac89/react-router-redux-todo-list?style=flat-square
 
 [code-size-badge]: https://img.shields.io/github/languages/code-size/jorgeac89/react-router-redux-todo-list?style=flat-square
 
