@@ -1,6 +1,6 @@
 {
   "name": "react-router-redux-todo-list",
-  "version": "1.2.1-rc.1",
+  "version": "1.2.1-rc.2",
   "description": "Example of a web application developed with React, React Router and Redux",
   "keywords": [
     "react",
