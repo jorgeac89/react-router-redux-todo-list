@@ -16,8 +16,17 @@ module.exports = merge(common, {
       cacheGroups: {
         defaultVendors: {
           reuseExistingChunk: true
+        },
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          name: "vendors",
+          priority: -10,
+          chunks: "all"
         }
       }
     }
+  },
+  output: {
+    library: 'reactRouterReduxTodoList'
   }
 });

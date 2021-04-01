@@ -1,14 +1,12 @@
 import React from 'react';
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 const Add = ({ todoText, onChangeTodoText, onAddTodo }) => (
   <>
     <div className="row">
       <div className="col-12 d-flex align-items-center justify-content-between">
-        <h2>
-          New todo
-        </h2>
+        <h2>New todo</h2>
         <Link to="/list" className="font-weight-bold">
           <i className="fas fa-list-alt mr-2" />
           Todo list
@@ -47,6 +45,6 @@ Add.propTypes = {
   todoText: PropTypes.string.isRequired,
   onChangeTodoText: PropTypes.func.isRequired,
   onAddTodo: PropTypes.func.isRequired
-}
+};
 
 export default Add;

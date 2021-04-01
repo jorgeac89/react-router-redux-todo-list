@@ -1,4 +1,4 @@
 #!/bin/sh
 
-docker container stop todolist_latest \
-&& docker container rm todolist_latest
+docker container stop reactrouterreduxtodolist_latest \
+&& docker container rm reactrouterreduxtodolist_latest

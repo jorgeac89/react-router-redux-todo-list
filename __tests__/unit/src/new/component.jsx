@@ -6,20 +6,26 @@ describe('New component', () => {
   const NewComponent = New.component;
 
   it('renders correctly without text', () => {
-    expect(shallow(
-      <NewComponent 
-        todoText=""
-        onChangeTodoText={() => {}}
-        onAddTodo={() => {}}
-      />)).toMatchSnapshot();
+    expect(
+      shallow(
+        <NewComponent
+          todoText=""
+          onChangeTodoText={() => {}}
+          onAddTodo={() => {}}
+        />
+      )
+    ).toMatchSnapshot();
   });
 
   it('renders correctly with text', () => {
-    expect(shallow(
-      <NewComponent 
-        todoText="Example todo"
-        onChangeTodoText={() => {}}
-        onAddTodo={() => {}}
-      />)).toMatchSnapshot();
+    expect(
+      shallow(
+        <NewComponent
+          todoText="Example todo"
+          onChangeTodoText={() => {}}
+          onAddTodo={() => {}}
+        />
+      )
+    ).toMatchSnapshot();
   });
 });

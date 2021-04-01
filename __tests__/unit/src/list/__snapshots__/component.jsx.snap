@@ -90,11 +90,14 @@ exports[`List component renders correctly during fetching data 1`] = `
             />
           }
           nextLinkClassName="page-link"
+          nextRel="next"
           onPageChange={[Function]}
           pageClassName="page-item"
           pageCount={0}
+          pageLabelBuilder={[Function]}
           pageLinkClassName="page-link"
           pageRangeDisplayed={5}
+          prevRel="prev"
           previousAriaLabel="Previous page"
           previousClassName="page-item"
           previousLabel={
@@ -216,11 +219,14 @@ exports[`List component renders correctly when an error occurs 1`] = `
             />
           }
           nextLinkClassName="page-link"
+          nextRel="next"
           onPageChange={[Function]}
           pageClassName="page-item"
           pageCount={0}
+          pageLabelBuilder={[Function]}
           pageLinkClassName="page-link"
           pageRangeDisplayed={5}
+          prevRel="prev"
           previousAriaLabel="Previous page"
           previousClassName="page-item"
           previousLabel={
@@ -995,11 +1001,14 @@ exports[`List component renders correctly with elements to display 1`] = `
             />
           }
           nextLinkClassName="page-link"
+          nextRel="next"
           onPageChange={[Function]}
           pageClassName="page-item"
           pageCount={1}
+          pageLabelBuilder={[Function]}
           pageLinkClassName="page-link"
           pageRangeDisplayed={5}
+          prevRel="prev"
           previousAriaLabel="Previous page"
           previousClassName="page-item"
           previousLabel={
@@ -1121,11 +1130,14 @@ exports[`List component renders correctly without elements to display 1`] = `
             />
           }
           nextLinkClassName="page-link"
+          nextRel="next"
           onPageChange={[Function]}
           pageClassName="page-item"
           pageCount={0}
+          pageLabelBuilder={[Function]}
           pageLinkClassName="page-link"
           pageRangeDisplayed={5}
+          prevRel="prev"
           previousAriaLabel="Previous page"
           previousClassName="page-item"
           previousLabel={

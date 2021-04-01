@@ -6,7 +6,7 @@ const initialState = {
   todos: [],
   todosPerPage: 10,
   currentPage: 0,
-  error: '',
+  error: ''
 };
 
 const reducer = (state = initialState, action) => {
@@ -18,34 +18,38 @@ const reducer = (state = initialState, action) => {
         ...state,
         fetching: false,
         fetched: true,
-        todos: [...state.todos, ...action.todos],
+        todos: [...state.todos, ...action.todos]
       };
     case ActionTypes.FETCH_TODOS_ERROR:
       return { ...state, fetching: false, fetched: false, error: action.error };
     case ActionTypes.ADD_TODO:
       return { ...state, todos: [...state.todos, action.newTodo] };
     case ActionTypes.TOGGLE_TODO: {
-      const todoIndex = state.todos.findIndex(todo => todo.id === action.todoId);
+      const todoIndex = state.todos.findIndex(
+        todo => todo.id === action.todoId
+      );
       return {
         ...state,
         todos: [
           ...state.todos.slice(0, todoIndex),
           {
             ...state.todos[todoIndex],
-            completed: !state.todos[todoIndex].completed,
+            completed: !state.todos[todoIndex].completed
           },
-          ...state.todos.slice(todoIndex + 1),
-        ],
+          ...state.todos.slice(todoIndex + 1)
+        ]
       };
     }
-    case ActionTypes.REMOVE_TODO:{
-      const todoIndex = state.todos.findIndex(todo => todo.id === action.todoId);
+    case ActionTypes.REMOVE_TODO: {
+      const todoIndex = state.todos.findIndex(
+        todo => todo.id === action.todoId
+      );
       return {
         ...state,
         todos: [
           ...state.todos.slice(0, todoIndex),
-          ...state.todos.slice(todoIndex + 1),
-        ],
+          ...state.todos.slice(todoIndex + 1)
+        ]
       };
     }
     case ActionTypes.CHANGE_PAGE:

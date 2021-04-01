@@ -31,7 +31,7 @@ const removeTodo = todoId => (dispatch, getState) => {
   const lastPage = Math.floor(
     (getState().list.todos.length - 1) / getState().list.todosPerPage
   );
-  if(lastPage < getState().list.currentPage) {
+  if (lastPage < getState().list.currentPage) {
     dispatch(changeToLastPage());
   }
 };
@@ -44,18 +44,20 @@ const fetchTodos = () => dispatch => {
         return response.json();
       }
       return Promise.reject(new Error(response.statusText));
-    }).then(response => {
+    })
+    .then(response => {
       dispatch({
         type: ActionTypes.FETCH_TODOS_SUCCESS,
-          todos: response.map(todo => ({
-            id: todo.id,
-            title: todo.title,
-            completed: todo.completed
-        })),
+        todos: response.map(todo => ({
+          id: todo.id,
+          title: todo.title,
+          completed: todo.completed
+        }))
       });
-    }).catch(error => {
-      dispatch({ 
-        type: ActionTypes.FETCH_TODOS_ERROR, 
+    })
+    .catch(error => {
+      dispatch({
+        type: ActionTypes.FETCH_TODOS_ERROR,
         error: `Request failed: ${error.message}`
       });
     });

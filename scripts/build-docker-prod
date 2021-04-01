@@ -11,6 +11,6 @@ NGINX_CONFIG_PATH="$PROJECT_PATH/nginx"
 && cp "$PROJECT_PATH/dockerfile" "$DOCKER_CONTEXT_PATH/dockerfile" \
 && cp -r "$PROJECT_PATH/dist" "$DOCKER_CONTEXT_PATH/dist" \
 && cp -r "$NGINX_CONFIG_PATH/nginx.docker.conf" "$DOCKER_CONTEXT_PATH/default.conf" \
-&& docker build -t todolist:latest "$DOCKER_CONTEXT_PATH"
+&& docker build -t reactrouterreduxtodolist:latest "$DOCKER_CONTEXT_PATH"
 
 rm -f -r "$DOCKER_CONTEXT_PATH"

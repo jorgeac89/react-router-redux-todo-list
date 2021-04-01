@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 import { Route, Redirect, Switch } from 'react-router';
 import { BottomBar, Header } from 'common';
 import Error404 from 'error-404';
@@ -39,7 +39,7 @@ App.propTypes = {
   store: PropTypes.shape({
     dispatch: PropTypes.func.isRequired,
     getState: PropTypes.func.isRequired
-    }).isRequired
-}
+  }).isRequired
+};
 
 export default App;
