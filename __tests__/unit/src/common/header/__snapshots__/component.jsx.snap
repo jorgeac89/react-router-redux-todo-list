@@ -18,19 +18,27 @@ exports[`Header component renders correctly 1`] = `
       <p
         className="lead"
       >
-        Example of a web application developed with 
+        <span>
+          Example of a web application developed with 
+        </span>
         <strong>
           React
         </strong>
-        , 
+        <span>
+          , 
+        </span>
         <strong>
           React Router
         </strong>
-         and 
+        <span>
+           and 
+        </span>
         <strong>
           Redux
         </strong>
-        .
+        <span>
+          .
+        </span>
       </p>
     </div>
     <div

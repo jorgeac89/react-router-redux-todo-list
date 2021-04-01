@@ -1,10 +1,9 @@
 {
   "parser": "babel-eslint",
   "extends": [
-    "eslint:recommended",
     "plugin:react/recommended",
-    "airbnb",
-    "prettier"
+    "plugin:prettier/recommended",
+    "eslint:recommended"
   ],
   "plugins": ["import", "jsx-a11y", "react"],
   "env": {
@@ -21,6 +20,36 @@
       "webpack": {
         "config": "webpack.common.js"
       }
+    },
+    "react": {
+      "version": "detect"
     }
+  },
+  "rules": {
+    "import/extensions": [
+      "error",
+      "always",
+      {
+        "pattern": {
+          "js": "never",
+          "jsx": "never",
+          "json": "never",
+          "css": "never",
+          "scss": "never"
+        }
+      }
+    ],
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "react/jsx-curly-newline": [
+      "error",
+      "consistent"
+    ]
   }
 }

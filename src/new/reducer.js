@@ -1,7 +1,7 @@
 import ActionTypes from './actionTypes';
 
 const initialState = {
-  todoText: '',
+  todoText: ''
 };
 
 const reducer = (state = initialState, action) => {

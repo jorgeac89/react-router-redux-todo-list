@@ -4,10 +4,7 @@ import { createStore, applyMiddleware } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension/developmentOnly';
 import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
-import {
-	ConnectedRouter,
-	routerMiddleware,
-} from 'connected-react-router';
+import { ConnectedRouter, routerMiddleware } from 'connected-react-router';
 import { createBrowserHistory } from 'history';
 import createReducer from './reducer';
 
@@ -29,8 +26,8 @@ const history = createBrowserHistory();
 const store = createStore(
   createReducer(history),
   composeWithDevTools({
-    trace: true, 
-    traceLimit: 25 
+    trace: true,
+    traceLimit: 25
   })(applyMiddleware(thunk, routerMiddleware(history)))
 );
 
@@ -42,6 +39,6 @@ import(/* webpackChunkName: "main" */ './app').then(App => {
         <AppComponent store={store} />
       </ConnectedRouter>
     </Provider>,
-    document.getElementById('app'),
+    document.getElementById('app')
   );
 });

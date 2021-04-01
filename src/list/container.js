@@ -5,8 +5,9 @@ import component from './component';
 const mapStateToProps = state => ({
   ...state.list,
   todos: state.list.todos.slice(
-    state.list.todosPerPage * state.list.currentPage, 
-    state.list.todosPerPage * (state.list.currentPage + 1)),
+    state.list.todosPerPage * state.list.currentPage,
+    state.list.todosPerPage * (state.list.currentPage + 1)
+  ),
   currentPage: state.list.currentPage,
   pageCount: Math.ceil(state.list.todos.length / state.list.todosPerPage),
   fetching: state.list.fetching,
@@ -23,10 +24,7 @@ const mapDispatchToProps = dispatch => ({
   },
   changePage: pageNumber => {
     dispatch(Actions.changePage(pageNumber));
-  },
+  }
 });
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(component);
+export default connect(mapStateToProps, mapDispatchToProps)(component);

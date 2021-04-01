@@ -3,7 +3,7 @@ import Actions from './actions';
 import component from './component';
 
 const mapStateToProps = state => ({
-  todoText: state.new.todoText,
+  todoText: state.new.todoText
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -15,7 +15,4 @@ const mapDispatchToProps = dispatch => ({
   }
 });
 
-export default connect(
-	mapStateToProps,
-	mapDispatchToProps,
-)(component);
+export default connect(mapStateToProps, mapDispatchToProps)(component);
