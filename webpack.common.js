@@ -47,8 +47,8 @@ const plugins = [
 if (!inlineStyle) {
   plugins.push(
     new MiniCssExtractPlugin({
-      filename: '[name].css',
-      chunkFilename: '[id].css'
+      filename: '[name].[contenthash:8].css',
+      chunkFilename: '[id].[contenthash:8].css'
     }),
   );
 }
@@ -63,11 +63,11 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist', 'assets', 'bundle'),
-    filename: '[name].js',
+    filename: '[name].[contenthash:8].js',
+    chunkFilename: '[name].[contenthash:8].chunk.js',
     publicPath: '/assets/bundle/',
     libraryTarget: 'var',
     library: '[name]',
-    chunkFilename: '[name].chunk.js',
     sourceMapFilename: '[file].map',
     crossOriginLoading: 'anonymous'
   },
@@ -105,7 +105,7 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.json'],
+    extensions: ['.js', '.jsx', '.json', '.css', '.scss'],
     alias: {
       lib: path.resolve(__dirname, 'lib'),
       src: path.resolve(__dirname, 'src'),

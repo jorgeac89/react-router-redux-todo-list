@@ -13,7 +13,7 @@ import createReducer from './reducer';
 
 import(/* webpackChunkName: "bootstrap" */ 'bootstrap');
 import(/* webpackChunkName: "fontawesome" */ '@fortawesome/fontawesome-free');
-import(/* webpackChunkName: "style" */ './style.scss');
+import(/* webpackChunkName: "style" */ './style');
 
 if (process.env.NODE_ENV === 'development') {
   /* eslint-disable global-require */
