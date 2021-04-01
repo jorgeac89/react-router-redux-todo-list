@@ -105,10 +105,10 @@ It is recommended run the project in a Linux machine. Also you will need to inst
 
    This will install the project dependencies and will set up Git.
 
-4. Add the hostnames `todolist.local` and `www.todolist.local` to the localhost IP row in the file `/etc/hosts`. The row should look like this:
+4. Add the hostnames `reactrouterreduxtodolist.local` and `www.reactrouterreduxtodolist.local` to the localhost IP row in the file `/etc/hosts`. The row should look like this:
 
    ```txt
-   127.0.0.1	localhost todolist.local www.todolist.local
+   127.0.0.1	localhost reactrouterreduxtodolist.local www.reactrouterreduxtodolist.local
    ```
 
 5. If you want to run the project using Nginx, configure it with the following command:
@@ -177,8 +177,8 @@ pnpm prod:docker
 
 2. Now you should now be able to access the application through any of these links:
 
-   - [todolist.local:8080][primary-dev-webpack-link]
-   - [www.todolist.local:8080][secondary-dev-webpack-link]
+   - [reactrouterreduxtodolist.local:8080][primary-dev-webpack-link]
+   - [www.reactrouterreduxtodolist.local:8080][secondary-dev-webpack-link]
 
 3. To stop the server, press `Ctrl+C` in the terminal where the server is running or run the following command in another terminal:
 
@@ -220,8 +220,8 @@ pnpm prod:docker
 
 4. Now you should now be able to access the application through any of these links:
 
-   - [todolist.local][primary-nginx-link]
-   - [www.todolist.local][secondary-nginx-link]
+   - [reactrouterreduxtodolist.local][primary-nginx-link]
+   - [www.reactrouterreduxtodolist.local][secondary-nginx-link]
 
 5. To stop Nginx, run:
 
@@ -245,8 +245,8 @@ pnpm prod:docker
 
 3. Now you should now be able to access the application through any of these links:
 
-   - [todolist.local:81][primary-dev-docker-link]
-   - [www.todolist.local:81][secondary-dev-docker-link]
+   - [reactrouterreduxtodolist.local:81][primary-dev-docker-link]
+   - [www.reactrouterreduxtodolist.local:81][secondary-dev-docker-link]
 
 4. To stop the Docker container, run:
 
@@ -270,8 +270,8 @@ pnpm prod:docker
 
 2. Now you should now be able to access the application through any of these links:
 
-   - [todolist.local:8090][primary-prod-webpack-link]
-   - [www.todolist.local:8090][secondary-prod-webpack-link]
+   - [reactrouterreduxtodolist.local:8090][primary-prod-webpack-link]
+   - [www.reactrouterreduxtodolist.local:8090][secondary-prod-webpack-link]
 
 3. To stop the server, press `Ctrl+C` in the terminal where the server is running or run any of the following commands in another terminal:
 
@@ -325,8 +325,8 @@ pnpm prod:docker
 
 4. Now you should now be able to access the application through any of these links:
 
-   - [todolist.local][primary-nginx-link]
-   - [www.todolist.local][secondary-nginx-link]
+   - [reactrouterreduxtodolist.local][primary-nginx-link]
+   - [www.reactrouterreduxtodolist.local][secondary-nginx-link]
 
 5. To stop Nginx, run:
 
@@ -354,8 +354,8 @@ pnpm prod:docker
 
 3. Now you should now be able to access the application through any of these links:
 
-   - [todolist.local:91][primary-prod-docker-link]
-   - [www.todolist.local:91][secondary-prod-docker-link]
+   - [reactrouterreduxtodolist.local:91][primary-prod-docker-link]
+   - [www.reactrouterreduxtodolist.local:91][secondary-prod-docker-link]
 
 4. To stop the Docker container, run:
 
@@ -522,25 +522,25 @@ This project is licensed under the MIT License - see the [LICENSE][license] file
 
 <!-- APP LINKS -->
 
-[primary-dev-webpack-link]: http://todolist.local:8080
+[primary-dev-webpack-link]: http://reactrouterreduxtodolist.local:8080
 
-[secondary-dev-webpack-link]: http://www.todolist.local:8080
+[secondary-dev-webpack-link]: http://www.reactrouterreduxtodolist.local:8080
 
-[primary-nginx-link]: http://todolist.local
+[primary-nginx-link]: http://reactrouterreduxtodolist.local
 
-[secondary-nginx-link]: http://www.todolist.local
+[secondary-nginx-link]: http://www.reactrouterreduxtodolist.local
 
-[primary-dev-docker-link]: http://todolist.local:8081
+[primary-dev-docker-link]: http://reactrouterreduxtodolist.local:8081
 
-[secondary-dev-docker-link]: http://www.todolist.local:8081
+[secondary-dev-docker-link]: http://www.reactrouterreduxtodolist.local:8081
 
-[primary-prod-webpack-link]: http://todolist.local:8090
+[primary-prod-webpack-link]: http://reactrouterreduxtodolist.local:8090
 
-[secondary-prod-webpack-link]: http://www.todolist.local:8090
+[secondary-prod-webpack-link]: http://www.reactrouterreduxtodolist.local:8090
 
-[primary-prod-docker-link]: http://todolist.local:8091
+[primary-prod-docker-link]: http://reactrouterreduxtodolist.local:8091
 
-[secondary-prod-docker-link]: http://www.todolist.local:8091
+[secondary-prod-docker-link]: http://www.reactrouterreduxtodolist.local:8091
 
 <!-- REPOSITORY LINKS -->
 

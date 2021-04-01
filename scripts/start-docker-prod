@@ -4,5 +4,5 @@ docker run \
   -d \
   -p 8091:80 \
   --restart unless-stopped \
-  --name todolist_latest \
-  todolist:latest
+  --name reactrouterreduxtodolist_latest \
+  reactrouterreduxtodolist:latest
