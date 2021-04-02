@@ -36,32 +36,36 @@ const removeTodo = todoId => (dispatch, getState) => {
   }
 };
 
-const fetchTodos = () => dispatch => {
-  dispatch({ type: ActionTypes.FETCH_TODOS_BEGINS });
-  fetch(fetchTodosEndPoint)
-    .then(response => {
-      if (response.ok) {
-        return response.json();
-      }
-      return Promise.reject(new Error(response.statusText));
-    })
-    .then(response => {
-      dispatch({
-        type: ActionTypes.FETCH_TODOS_SUCCESS,
-        todos: response.map(todo => ({
+const fetchTodos = () => dispatch =>
+  new Promise((resolve, reject) => {
+    dispatch({ type: ActionTypes.FETCH_TODOS_BEGINS });
+    fetch(fetchTodosEndPoint)
+      .then(response => {
+        if (response.ok) {
+          return response.json();
+        }
+        return Promise.reject(new Error(response.statusText));
+      })
+      .then(response => {
+        const todos = response.map(todo => ({
           id: todo.id,
           title: todo.title,
           completed: todo.completed
-        }))
+        }));
+        dispatch({
+          type: ActionTypes.FETCH_TODOS_SUCCESS,
+          todos
+        });
+        resolve(todos);
+      })
+      .catch(error => {
+        dispatch({
+          type: ActionTypes.FETCH_TODOS_ERROR,
+          error: `Request failed: ${error.message}`
+        });
+        reject(error);
       });
-    })
-    .catch(error => {
-      dispatch({
-        type: ActionTypes.FETCH_TODOS_ERROR,
-        error: `Request failed: ${error.message}`
-      });
-    });
-};
+  });
 
 export default {
   addTodo,

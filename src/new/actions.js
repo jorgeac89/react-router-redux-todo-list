@@ -8,16 +8,24 @@ const changeTodoText = newTodoText => ({
 });
 
 const addTodo = () => (dispatch, getState) => {
-  dispatch(
-    List.actions.addTodo({
-      id: new Date().getTime(),
-      title: getState().new.todoText,
-      completed: false
-    })
-  );
-  dispatch(List.actions.changeToLastPage());
-  dispatch({ type: ActionTypes.ADD_TODO });
-  dispatch(push('/list'));
+  const newTodo = {
+    id: new Date().getTime(),
+    title: getState().new.todoText,
+    completed: false
+  };
+  if (!getState().list.fetching && !getState().list.fetched) {
+    dispatch(List.actions.fetchTodos()).then(() => {
+      dispatch(List.actions.addTodo(newTodo));
+      dispatch(List.actions.changeToLastPage());
+      dispatch({ type: ActionTypes.ADD_TODO });
+      dispatch(push('/list'));
+    });
+  } else {
+    dispatch(List.actions.addTodo(newTodo));
+    dispatch(List.actions.changeToLastPage());
+    dispatch({ type: ActionTypes.ADD_TODO });
+    dispatch(push('/list'));
+  }
 };
 
 export default { changeTodoText, addTodo };
