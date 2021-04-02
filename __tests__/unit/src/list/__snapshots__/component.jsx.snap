@@ -64,51 +64,55 @@ exports[`List component renders correctly during fetching data 1`] = `
         />
       </div>
     </div>
-    <div
-      className="row mt-2"
+    <If
+      check={false}
     >
       <div
-        className="col-12"
+        className="row mt-2"
       >
-        <o
-          activeClassName="active"
-          activeLinkClassName=""
-          breakClassName="page-item"
-          breakLabel="..."
-          breakLinkClassName="page-link"
-          containerClassName="pagination justify-content-center mb-0 font-weight-bold"
-          disableInitialCallback={false}
-          disabledClassName="disabled"
-          eventListener="onClick"
-          forcePage={0}
-          marginPagesDisplayed={1}
-          nextAriaLabel="Next page"
-          nextClassName="page-item"
-          nextLabel={
-            <i
-              className="fas fa-chevron-right"
-            />
-          }
-          nextLinkClassName="page-link"
-          nextRel="next"
-          onPageChange={[Function]}
-          pageClassName="page-item"
-          pageCount={0}
-          pageLabelBuilder={[Function]}
-          pageLinkClassName="page-link"
-          pageRangeDisplayed={5}
-          prevRel="prev"
-          previousAriaLabel="Previous page"
-          previousClassName="page-item"
-          previousLabel={
-            <i
-              className="fas fa-chevron-left"
-            />
-          }
-          previousLinkClassName="page-link"
-        />
+        <div
+          className="col-12"
+        >
+          <o
+            activeClassName="active"
+            activeLinkClassName=""
+            breakClassName="page-item"
+            breakLabel="..."
+            breakLinkClassName="page-link"
+            containerClassName="pagination justify-content-center mb-0 font-weight-bold"
+            disableInitialCallback={false}
+            disabledClassName="disabled"
+            eventListener="onClick"
+            forcePage={0}
+            marginPagesDisplayed={1}
+            nextAriaLabel="Next page"
+            nextClassName="page-item"
+            nextLabel={
+              <i
+                className="fas fa-chevron-right"
+              />
+            }
+            nextLinkClassName="page-link"
+            nextRel="next"
+            onPageChange={[Function]}
+            pageClassName="page-item"
+            pageCount={0}
+            pageLabelBuilder={[Function]}
+            pageLinkClassName="page-link"
+            pageRangeDisplayed={5}
+            prevRel="prev"
+            previousAriaLabel="Previous page"
+            previousClassName="page-item"
+            previousLabel={
+              <i
+                className="fas fa-chevron-left"
+              />
+            }
+            previousLinkClassName="page-link"
+          />
+        </div>
       </div>
-    </div>
+    </If>
   </If>
   <If
     check={false}
@@ -193,51 +197,55 @@ exports[`List component renders correctly when an error occurs 1`] = `
         />
       </div>
     </div>
-    <div
-      className="row mt-2"
+    <If
+      check={false}
     >
       <div
-        className="col-12"
+        className="row mt-2"
       >
-        <o
-          activeClassName="active"
-          activeLinkClassName=""
-          breakClassName="page-item"
-          breakLabel="..."
-          breakLinkClassName="page-link"
-          containerClassName="pagination justify-content-center mb-0 font-weight-bold"
-          disableInitialCallback={false}
-          disabledClassName="disabled"
-          eventListener="onClick"
-          forcePage={0}
-          marginPagesDisplayed={1}
-          nextAriaLabel="Next page"
-          nextClassName="page-item"
-          nextLabel={
-            <i
-              className="fas fa-chevron-right"
-            />
-          }
-          nextLinkClassName="page-link"
-          nextRel="next"
-          onPageChange={[Function]}
-          pageClassName="page-item"
-          pageCount={0}
-          pageLabelBuilder={[Function]}
-          pageLinkClassName="page-link"
-          pageRangeDisplayed={5}
-          prevRel="prev"
-          previousAriaLabel="Previous page"
-          previousClassName="page-item"
-          previousLabel={
-            <i
-              className="fas fa-chevron-left"
-            />
-          }
-          previousLinkClassName="page-link"
-        />
+        <div
+          className="col-12"
+        >
+          <o
+            activeClassName="active"
+            activeLinkClassName=""
+            breakClassName="page-item"
+            breakLabel="..."
+            breakLinkClassName="page-link"
+            containerClassName="pagination justify-content-center mb-0 font-weight-bold"
+            disableInitialCallback={false}
+            disabledClassName="disabled"
+            eventListener="onClick"
+            forcePage={0}
+            marginPagesDisplayed={1}
+            nextAriaLabel="Next page"
+            nextClassName="page-item"
+            nextLabel={
+              <i
+                className="fas fa-chevron-right"
+              />
+            }
+            nextLinkClassName="page-link"
+            nextRel="next"
+            onPageChange={[Function]}
+            pageClassName="page-item"
+            pageCount={0}
+            pageLabelBuilder={[Function]}
+            pageLinkClassName="page-link"
+            pageRangeDisplayed={5}
+            prevRel="prev"
+            previousAriaLabel="Previous page"
+            previousClassName="page-item"
+            previousLabel={
+              <i
+                className="fas fa-chevron-left"
+              />
+            }
+            previousLinkClassName="page-link"
+          />
+        </div>
       </div>
-    </div>
+    </If>
   </If>
   <If
     check={true}
@@ -975,51 +983,55 @@ exports[`List component renders correctly with elements to display 1`] = `
         </ul>
       </div>
     </div>
-    <div
-      className="row mt-2"
+    <If
+      check={true}
     >
       <div
-        className="col-12"
+        className="row mt-2"
       >
-        <o
-          activeClassName="active"
-          activeLinkClassName=""
-          breakClassName="page-item"
-          breakLabel="..."
-          breakLinkClassName="page-link"
-          containerClassName="pagination justify-content-center mb-0 font-weight-bold"
-          disableInitialCallback={false}
-          disabledClassName="disabled"
-          eventListener="onClick"
-          forcePage={0}
-          marginPagesDisplayed={1}
-          nextAriaLabel="Next page"
-          nextClassName="page-item"
-          nextLabel={
-            <i
-              className="fas fa-chevron-right"
-            />
-          }
-          nextLinkClassName="page-link"
-          nextRel="next"
-          onPageChange={[Function]}
-          pageClassName="page-item"
-          pageCount={1}
-          pageLabelBuilder={[Function]}
-          pageLinkClassName="page-link"
-          pageRangeDisplayed={5}
-          prevRel="prev"
-          previousAriaLabel="Previous page"
-          previousClassName="page-item"
-          previousLabel={
-            <i
-              className="fas fa-chevron-left"
-            />
-          }
-          previousLinkClassName="page-link"
-        />
+        <div
+          className="col-12"
+        >
+          <o
+            activeClassName="active"
+            activeLinkClassName=""
+            breakClassName="page-item"
+            breakLabel="..."
+            breakLinkClassName="page-link"
+            containerClassName="pagination justify-content-center mb-0 font-weight-bold"
+            disableInitialCallback={false}
+            disabledClassName="disabled"
+            eventListener="onClick"
+            forcePage={0}
+            marginPagesDisplayed={1}
+            nextAriaLabel="Next page"
+            nextClassName="page-item"
+            nextLabel={
+              <i
+                className="fas fa-chevron-right"
+              />
+            }
+            nextLinkClassName="page-link"
+            nextRel="next"
+            onPageChange={[Function]}
+            pageClassName="page-item"
+            pageCount={1}
+            pageLabelBuilder={[Function]}
+            pageLinkClassName="page-link"
+            pageRangeDisplayed={5}
+            prevRel="prev"
+            previousAriaLabel="Previous page"
+            previousClassName="page-item"
+            previousLabel={
+              <i
+                className="fas fa-chevron-left"
+              />
+            }
+            previousLinkClassName="page-link"
+          />
+        </div>
       </div>
-    </div>
+    </If>
   </If>
   <If
     check={false}
@@ -1104,51 +1116,55 @@ exports[`List component renders correctly without elements to display 1`] = `
         />
       </div>
     </div>
-    <div
-      className="row mt-2"
+    <If
+      check={false}
     >
       <div
-        className="col-12"
+        className="row mt-2"
       >
-        <o
-          activeClassName="active"
-          activeLinkClassName=""
-          breakClassName="page-item"
-          breakLabel="..."
-          breakLinkClassName="page-link"
-          containerClassName="pagination justify-content-center mb-0 font-weight-bold"
-          disableInitialCallback={false}
-          disabledClassName="disabled"
-          eventListener="onClick"
-          forcePage={0}
-          marginPagesDisplayed={1}
-          nextAriaLabel="Next page"
-          nextClassName="page-item"
-          nextLabel={
-            <i
-              className="fas fa-chevron-right"
-            />
-          }
-          nextLinkClassName="page-link"
-          nextRel="next"
-          onPageChange={[Function]}
-          pageClassName="page-item"
-          pageCount={0}
-          pageLabelBuilder={[Function]}
-          pageLinkClassName="page-link"
-          pageRangeDisplayed={5}
-          prevRel="prev"
-          previousAriaLabel="Previous page"
-          previousClassName="page-item"
-          previousLabel={
-            <i
-              className="fas fa-chevron-left"
-            />
-          }
-          previousLinkClassName="page-link"
-        />
+        <div
+          className="col-12"
+        >
+          <o
+            activeClassName="active"
+            activeLinkClassName=""
+            breakClassName="page-item"
+            breakLabel="..."
+            breakLinkClassName="page-link"
+            containerClassName="pagination justify-content-center mb-0 font-weight-bold"
+            disableInitialCallback={false}
+            disabledClassName="disabled"
+            eventListener="onClick"
+            forcePage={0}
+            marginPagesDisplayed={1}
+            nextAriaLabel="Next page"
+            nextClassName="page-item"
+            nextLabel={
+              <i
+                className="fas fa-chevron-right"
+              />
+            }
+            nextLinkClassName="page-link"
+            nextRel="next"
+            onPageChange={[Function]}
+            pageClassName="page-item"
+            pageCount={0}
+            pageLabelBuilder={[Function]}
+            pageLinkClassName="page-link"
+            pageRangeDisplayed={5}
+            prevRel="prev"
+            previousAriaLabel="Previous page"
+            previousClassName="page-item"
+            previousLabel={
+              <i
+                className="fas fa-chevron-left"
+              />
+            }
+            previousLinkClassName="page-link"
+          />
+        </div>
       </div>
-    </div>
+    </If>
   </If>
   <If
     check={false}
