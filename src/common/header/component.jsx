@@ -7,7 +7,7 @@ const Header = () => (
       <div className="col-lg-6 text-lg-left">
         <h1 className="font-weight-light">React Router Redux Todo List</h1>
         <p className="lead">
-          <span>Example of a web application developed with&nbsp;</span>
+          <span>Example of web application implemented with&nbsp;</span>
           <strong>React</strong>
           <span>,&nbsp;</span>
           <strong>React Router</strong>
