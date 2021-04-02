@@ -1,4 +1,3 @@
-const path = require('path');
 const { merge } = require('webpack-merge');
 const TerserPlugin = require('terser-webpack-plugin');
 const common = require('./webpack.common.js');
@@ -19,9 +18,9 @@ module.exports = merge(common, {
         },
         vendor: {
           test: /[\\/]node_modules[\\/]/,
-          name: "vendors",
+          name: 'vendors',
           priority: -10,
-          chunks: "all"
+          chunks: 'all'
         }
       }
     }

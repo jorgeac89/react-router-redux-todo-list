@@ -94,34 +94,36 @@ const List = ({
           </ul>
         </div>
       </div>
-      <div className="row mt-2">
-        <div className="col-12">
-          <ReactPaginate
-            previousLabel={<i className="fas fa-chevron-left" />}
-            nextLabel={<i className="fas fa-chevron-right" />}
-            breakLabel="..."
-            /* Not necessary */
-            // initialPage={currentPage}
-            forcePage={currentPage}
-            pageCount={pageCount}
-            marginPagesDisplayed={1}
-            pageRangeDisplayed={5}
-            onPageChange={data => changePage(data.selected)}
-            containerClassName="pagination justify-content-center mb-0 font-weight-bold"
-            pageClassName="page-item"
-            pageLinkClassName="page-link"
-            previousClassName="page-item"
-            previousLinkClassName="page-link"
-            nextClassName="page-item"
-            nextLinkClassName="page-link"
-            breakClassName="page-item"
-            breakLinkClassName="page-link"
-            activeClassName="active"
-            activeLinkClassName=""
-            disabledClassName="disabled"
-          />
+      <If check={pageCount > 0}>
+        <div className="row mt-2">
+          <div className="col-12">
+            <ReactPaginate
+              previousLabel={<i className="fas fa-chevron-left" />}
+              nextLabel={<i className="fas fa-chevron-right" />}
+              breakLabel="..."
+              /* Not necessary */
+              // initialPage={currentPage}
+              forcePage={currentPage}
+              pageCount={pageCount}
+              marginPagesDisplayed={1}
+              pageRangeDisplayed={5}
+              onPageChange={data => changePage(data.selected)}
+              containerClassName="pagination justify-content-center mb-0 font-weight-bold"
+              pageClassName="page-item"
+              pageLinkClassName="page-link"
+              previousClassName="page-item"
+              previousLinkClassName="page-link"
+              nextClassName="page-item"
+              nextLinkClassName="page-link"
+              breakClassName="page-item"
+              breakLinkClassName="page-link"
+              activeClassName="active"
+              activeLinkClassName=""
+              disabledClassName="disabled"
+            />
+          </div>
         </div>
-      </div>
+      </If>
     </If>
     <If check={!!error}>
       <div className="row mt-3">

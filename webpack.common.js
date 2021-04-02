@@ -37,10 +37,11 @@ const plugins = [
     filename: path.resolve(__dirname, 'dist', 'index.html'),
     template: path.resolve(__dirname, 'index.ejs'),
     meta: {
-      viewport: 'width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no'
+      viewport:
+        'width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no'
     },
     title: 'React Router Redux Todo List',
-    favicon: path.resolve(__dirname, 'assets', 'favicon.ico'),
+    favicon: path.resolve(__dirname, 'assets', 'favicon.ico')
   })
 ];
 
@@ -49,7 +50,7 @@ if (!inlineStyle) {
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash:8].css',
       chunkFilename: '[id].[contenthash:8].css'
-    }),
+    })
   );
 }
 

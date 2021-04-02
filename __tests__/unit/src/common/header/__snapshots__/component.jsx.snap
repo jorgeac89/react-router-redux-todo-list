@@ -19,7 +19,7 @@ exports[`Header component renders correctly 1`] = `
         className="lead"
       >
         <span>
-          Example of a web application developed with 
+          Example of web application implemented with 
         </span>
         <strong>
           React
