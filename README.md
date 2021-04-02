@@ -31,7 +31,7 @@
 
 </div>
 
-Example of a web application implemented with **React**, **React Router** and **Redux**.
+Example of web application implemented with **React**, **React Router** and **Redux**.
 
 ## Table of contents
 
