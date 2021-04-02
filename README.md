@@ -6,7 +6,7 @@
   ![Last commit][last-commit-badge]
   ![Issues][issues-badge]
   ![Pull requests][pull-requests-badge]
-  ![release][release-badge]
+  ![Release][release-badge]
   ![Code size][code-size-badge]
   ![Repo size][repo-size-badge]
 
@@ -245,8 +245,8 @@ pnpm prod:docker
 
 3. Now you should now be able to access the application through any of these links:
 
-   - [reactrouterreduxtodolist.local:81][primary-dev-docker-link]
-   - [www.reactrouterreduxtodolist.local:81][secondary-dev-docker-link]
+   - [reactrouterreduxtodolist.local:8081][primary-dev-docker-link]
+   - [www.reactrouterreduxtodolist.local:8081][secondary-dev-docker-link]
 
 4. To stop the Docker container, run:
 
@@ -354,8 +354,8 @@ pnpm prod:docker
 
 3. Now you should now be able to access the application through any of these links:
 
-   - [reactrouterreduxtodolist.local:91][primary-prod-docker-link]
-   - [www.reactrouterreduxtodolist.local:91][secondary-prod-docker-link]
+   - [reactrouterreduxtodolist.local:8091][primary-prod-docker-link]
+   - [www.reactrouterreduxtodolist.local:8091][secondary-prod-docker-link]
 
 4. To stop the Docker container, run:
 
@@ -491,7 +491,7 @@ pnpm format:autofix
 - [Sass][sass] - Preprocessor scripting language that is interpreted or compiled into CSS
 - [ESLint][eslint] - Linter tool for JS and JSX files
 - [Stylelint][stylelint] -  Linter tool for CSS and SCSS files
-- [Prettier][prettier]- Multilanguage code formatter.
+- [Prettier][prettier]- Multilanguage code formatter
 - [pnpm][pnpm] - Node package manager
 - [Nginx][nginx] -  HTTP server and reverse proxy
 - [Docker][docker] - Tool designed to create, deploy, and run applications by using containers
